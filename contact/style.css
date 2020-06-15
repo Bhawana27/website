@@ -1,0 +1,128 @@
+h1 {
+    color: brown;
+    background-color: cyan;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: aqua;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    color:blue;
+    font-size: 30px;
+    margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+.para {
+    border-radius: 5px;
+    background-color: blue;
+    padding: 1px 1px;
+    color: white;
+    font-size: 20px;
+}
+
+.form {
+    background-color:skyblue;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .col1, .col2, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+#subject {
+    height: 200px;
+}
+
+.grid1 {
+    grid-area: header;
+}
+.grid2{
+    grid-area: menu;
+}
+.grid3 {
+    grid-area: main;
+}
+.grid4 {
+    grid-area: right;
+}
+
+.grid6 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+                         'menu menu main main right right'
+                         'menu menu footer footer footer footer' ;
+    grid-gap: 10px;
+    background-color: skyblue;
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: blue;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="para">
+        <p> You can contact us from here. 
+        Please fill out the form with the correct information, so in future we can contact you.</p> 
+    </div>
+    <div class="form">
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col1">
+            <label for="fname"> First Name</label>
+            </div>
+            <div class="col2">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.....">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+            <label for="lname"> Last Name</label>
+            </div>
+            <div class="col2">
+            <input type="text" id="lname" placeholder="your last name.....">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+            <label for="country"> Country</label>
+            </div>
+
+        <div class="col2">
+            <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="america">America</option>
+            <option value="england">England</option>
+            <option value="africa">Africa</option>
+            <option value="australia">Australia</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+            <label for="subject">Subject</label> </div>
+            <div id="col2">
+            <textarea id="subject" name="subject" placeholder="Write something here...."></textarea>
+        </textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+
+        </form>
+    </div>
+</body>
+</html>

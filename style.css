@@ -1,0 +1,53 @@
+h1 {
+    background-color:  brown;
+    color: cornsilk;
+    text-align: center;
+}
+
+.container {
+    margin: 10px;
+    background-color: cyan;
+    height: 200px;
+
+}
+#container1{
+    flex-grow: 2;
+}
+#container {
+    flex-grow:1 ;
+}
+.parent{
+    border: 3px solid green;
+
+}
+.parent > p{
+    text-align: center;
+}
+.parentcontainer { 
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+#container3{
+    width: 300px;
+}
+
+#parent-2{
+    justify-content: center;
+}
+
+#parent-3{
+    height: 500px;
+    background:#bbbbbb;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container4{
+    width: 400px;
+}
+
+#parent-5{
+    justify-content: space-between;
+}
